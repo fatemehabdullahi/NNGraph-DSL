@@ -1,7 +1,5 @@
 # NNGraph DSL
 
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#nngraph-dsl)
-
 This repository contains an **academic compiler project** implementing a **Domain-Specific Language (DSL)** called **NNGraph** for describing neural network architectures in a simple textual format.
 
 The compiler parses NNGraph programs, performs **semantic analysis**, and automatically generates equivalent **PyTorch code** and a **Graphviz representation** of the neural network architecture.
@@ -9,8 +7,6 @@ The compiler parses NNGraph programs, performs **semantic analysis**, and automa
 ---
 
 ## 📌 Project Overview
-
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#-project-overview)
 
 NNGraph allows users to describe the structure of neural networks without directly implementing them in a deep learning framework.
 
@@ -29,8 +25,6 @@ The generated PyTorch model can then be used as an executable neural network imp
 ---
 
 ## ✨ Features
-
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#-features)
 
 * Custom **NNGraph Domain-Specific Language**
 * Grammar implementation using **ANTLR4**
@@ -56,8 +50,6 @@ The generated PyTorch model can then be used as an executable neural network imp
 ---
 
 ## 🧠 Supported Layers & Operations
-
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#-supported-layers--operations)
 
 The NNGraph language supports a variety of neural network components.
 
@@ -99,8 +91,6 @@ These operations allow the language to describe more complex architectures conta
 ---
 
 ## 🏗️ Compiler Architecture
-
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#️-compiler-architecture)
 
 The compiler is designed as a modular pipeline:
 
@@ -147,8 +137,6 @@ The main components are:
 
 ## 🔍 Semantic Analysis
 
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#-semantic-analysis)
-
 After parsing and constructing the internal representation, the compiler performs several semantic checks to ensure that the neural network is logically valid.
 
 The analyzer verifies:
@@ -171,8 +159,6 @@ Code generation is performed only when the model passes semantic validation succ
 
 ## ⚙️ Code Generation
 
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#️-code-generation)
-
 The Code Generator converts the validated internal model into executable **PyTorch** code.
 
 For example, an NNGraph model containing several Linear layers and activation functions can be automatically converted into a PyTorch `nn.Module`.
@@ -193,8 +179,6 @@ The generator uses a topological ordering of the graph to ensure that each node 
 
 ## 📊 Graphviz Visualization
 
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#-graphviz-visualization)
-
 In addition to generating PyTorch code, NNGraph can generate a **Graphviz representation** of the neural network.
 
 The visualization makes it easier to:
@@ -210,8 +194,6 @@ The generated graph distinguishes the model input, internal nodes, and final out
 ---
 
 ## 🧪 Test Cases
-
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#-test-cases)
 
 Several neural network architectures were tested with the compiler, including:
 
@@ -260,8 +242,6 @@ The tests demonstrated that valid NNGraph inputs can be parsed, semantically ana
 
 ## 🛠 Tools & Environment
 
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#-tools--environment)
-
 * **Python**
 * **ANTLR 4.13.2**
 * **PyTorch**
@@ -271,7 +251,5 @@ The tests demonstrated that valid NNGraph inputs can be parsed, semantically ana
 ---
 
 ## 📄 License
-
-[svg](https://github.com/fatemehabdullahi/NNGraph-DSL#-license)
 
 This project was developed for **academic and educational purposes** as part of the **Compiler Design Principles** course.
