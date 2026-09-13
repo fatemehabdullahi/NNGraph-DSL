@@ -1,0 +1,21 @@
+model Test {
+    input x : tensor(784)
+    output out
+}
+
+graph {
+
+    node fc1 : Linear(in_features=784,out_features=256)
+
+    node fc1 : ReLU()
+
+    node out : Softmax(dim=1)
+
+    edge x -> fc1
+    edge fc1 -> out
+}
+
+config{
+    batch_size=32
+    device="cpu"
+}
